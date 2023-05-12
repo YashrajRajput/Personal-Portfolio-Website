@@ -1,0 +1,560 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Montserrat&display=swap');
+
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+}
+
+.homeContainer {
+    display: flex;
+}
+
+.homeContent {
+    width: 100vw;
+    height: 100vh;
+    /* margin-le1ft: -00px; */
+    /* background-color: aquamarine; */
+    /* background-color: #dde6f7; */
+    background-color: rgba(255, 190, 164, 0.354);
+
+}
+
+
+/* .homeContent a{
+    margin: 0px 0px;
+} */
+
+
+.sidebar1 {
+    width: 20vw;
+    height: 85vh;
+    background-color: rgb(222, 212, 212);
+    padding: 50px 0px;
+    font-size: 20px;
+    transition:transform 0.2s ease-in;
+}
+
+
+.sidebar1 nav {
+    padding: 20px;
+}
+
+.sidebar1 nav li {
+    cursor: pointer;
+    list-style: none;
+    padding: 25px 0px;
+    margin-left: 20px;
+}
+
+.sidebar1 nav ul a {
+    text-decoration: none;
+    color: black;
+}
+
+.sidebar1 nav ul a:hover {
+    color: white;
+    font-size: 22px;
+}
+
+
+.infoCont {
+    /* background-color: red; */
+
+    width: 70vw;
+    height: 75vh;
+    margin: 55px auto;
+    margin-left: 100px;
+    margin-top: 50px;
+    justify-content: space-around;
+    display: flex;
+}
+
+.devInfo {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: -150px;
+}
+
+
+.devInfo div {
+    padding: 5px 0px;
+}
+
+.hello {
+    font-size: 60px;
+    color: black;
+    font-family: 'Inter', sans-serif;
+}
+
+.name {
+    font-size: 45px;
+    font-weight: bold;
+    /* color: rgb(255, 202, 103); */
+    color: violet;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+/* .infoCont .devInfo .name:hover{
+     text-decoration:solid underline 2px black; 
+}  
+*/
+
+.about1,
+.about2 {
+    color: #555;
+    font-size: 18px;
+}
+
+
+.buttons button {
+    padding: 12px;
+    border-radius: 20px;
+    background-color: rgb(120, 120, 244);
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 50px;
+}
+
+
+.buttons button:hover {
+    color: rgb(120, 120, 244);
+    background-color: white;
+}
+
+.devPic img {
+    height: 75vh;
+    margin-left: -100px;
+    position: absolute;
+    transform: translateX(-50%);
+    transition: top 1s, left 1s;
+    /* transition: top 1s, right 1s; */
+}
+
+.devPic .Yashpic {
+    position: absolute;
+    margin-top: -80px;
+    width: 450px;
+    height: 540px;
+}
+
+.devPic .yellow {
+    position: absolute;
+    margin-top: 300px;
+    margin-left: 10px;
+    width: 50px;
+    height: 40px;
+}
+
+.devPic .Yashpic:hover {
+    width: 455px;
+    height: 545px;
+    cursor: pointer;
+    /* transform: scale(1.1); */
+}
+
+
+/*
+.hamburger{
+    position: absolute;
+    left: 0px;
+    margin-left: 10px;
+    margin-top: 8px;
+    cursor: pointer;
+}
+
+.hamburger .cross{
+    /* position: absolute; */
+    /* margin-left: 180px; */
+    /* width: 200px; */
+/* } */
+
+/*
+ .sidebar1go{
+    transform: translate(-443px,0px);
+    position: absolute;
+} 
+
+.hamburger .ham:hover{
+    width: 31px;
+}
+
+.hamburger .cross:hover{
+    width: 31px;
+}
+*/
+
+
+/* **************************** Contact Form ******************************************************************************** */
+
+.contactInfo {
+    /* background-color: #eff4fd; */
+    background-color: rgba(255, 190, 164, 0.354);
+    /* background-color: white; */
+    width: 80vw;
+    height: 122vh;
+    padding: 0px 50px;
+    padding-top: 20px;
+}
+
+
+.sidebar3{
+    width: 20vw;
+    height: 110vh;
+    background-color: rgb(222, 212, 212);
+    padding: 50px 0px;
+    font-size: 20px;
+    /* transition:transform 0.2s ease-in; */
+}
+
+
+.sidebar3 nav {
+    padding: 20px;
+}
+
+.sidebar3 nav li {
+    cursor: pointer;
+    list-style: none;
+    padding: 25px 0px;
+    margin-left: 20px;
+}
+
+.sidebar3 nav ul a {
+    text-decoration: none;
+    color: black;
+}
+
+.sidebar3 nav ul a:hover {
+    color: white;
+    font-size: 22px;
+}
+
+
+.contactInfo h2 {
+    padding-bottom: 40px;
+    padding-left: 0px;
+}
+
+.contactInfo div {
+    padding-bottom: 5px;
+    padding-top: 10px;
+}
+
+.contactInfo div input,textarea {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.contactInfo input[type="text"],
+input[type="email"],
+input[type="phone"] {
+    border: 1px solid black;
+    background-color: white;
+    height: 35px;
+    border-radius: 3px;
+}
+
+
+.contactInfo .mb-4 textarea {
+    /* height: 130px;
+    width: 500px; */
+    border-radius: 3px;
+    width: 700px;
+}
+
+.form-text {
+    font-size: 14px;
+}
+
+#form-check {
+    flex-direction: row;
+}
+
+
+#form-check input {
+    width: 15px;
+    margin: 5px 0px;
+    margin-right: 5px;
+}
+
+
+input::placeholder {
+    font-size: 16px;
+    /* font-family: monospace; */
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding-left: 10px;
+}
+
+.form-control {
+    width: 400px;
+}
+
+.contactInfo form div {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-check-label {
+    display: flex;
+    flex-direction: row;
+}
+
+
+
+.contactInfo .mb-5{
+    display:flex;
+    flex-direction: column;
+    margin-left: 950px;
+    /* margin-bottom: -300px; */
+    margin-top: -500px;
+}
+
+.contactInfo div img{
+    width: 2.5vw;
+    margin-top: 20px;
+}
+.contactInfo div img:hover{
+    width: 3vw;
+    margin-bottom: -1px;
+}  
+
+/* .contactInfo .mb-5 .whatsapp{
+    margin-left: 0px;
+} */
+
+.contactInfo button {
+    margin-top: 270px;
+    width: 200px;
+}
+
+
+/* **************************** Certification Page ******************************************************************************** */
+
+
+.certificationContent {
+    /* background-color: aqua; */
+    /* background-color: #dde6f7; */
+    background-color: rgba(255, 190, 164, 0.354);
+    width: 80vw;
+}
+
+
+.certificationContent p {
+    width: 400px;
+    margin-right: 10px;
+    font-size: 25px;
+    margin-left: 80px;
+    margin-top: 120px;
+}
+
+.sidebar2{
+    width: 20vw;
+    height: 300vh;
+    background-color: rgb(222, 212, 212);
+    padding: 50px 0px;
+    font-size: 20px;
+}
+
+
+
+
+.sidebar2 nav {
+    padding: 20px;
+}
+
+.sidebar2 nav li {
+    cursor: pointer;
+    list-style: none;
+    padding: 25px 0px;
+    margin-left: 20px;
+}
+
+.sidebar2 nav ul a {
+    text-decoration: none;
+    color: black;
+}
+
+.sidebar2 nav ul a:hover {
+    color: white;
+    font-size: 22px;
+}
+
+
+.certificationContent p a {
+    color: black;
+    text-decoration: none;
+    font-size: 22px;
+    /* width: 10px; */
+}
+
+.certificationContent p a:hover {
+    font-size: 22.2px;
+    text-decoration: solid 1px black underline;
+
+}
+
+
+
+.certificationContent li img:hover {
+    cursor: pointer;
+    width: 36vw;
+    height: 51vh;
+}
+
+
+.certificationContent .li3 img:hover {
+    cursor: pointer;
+    width: 29vw;
+    height: 86vh;
+}
+
+
+.certificationContent li {
+    display: flex;
+    padding-top: 20px;
+}
+
+
+.certificationContent h1 {
+    margin: 50px 50px;
+    font-size: 48px;
+}
+
+
+.certificationContent .li1 img {
+    border: 2px solid black;
+    width: 35vw;
+    height: 50vh;
+    margin-left: 150px;
+    margin-top: 40px;
+}
+
+.certificationContent .li2 img {
+    border: 2px solid black;
+    margin-top: 50px;
+    margin-left: 150px;
+    width: 35vw;
+    height: 50vh;
+}
+
+
+
+.certificationContent .li3 img {
+    border: 2px solid black;
+    margin-top: 50px;
+    margin-left: 200px;
+    width: 28vw;
+    height: 85vh;
+}
+
+.certificationContent .li4 img {
+    border: 2px solid black;
+    margin-top: 50px;
+    margin-left: 150px;
+    width: 35vw;
+    height: 50vh;
+}
+
+
+.certificationContent .li1 p {
+    margin-top: 150px;
+    width: 300px;
+}
+
+.certificationContent .li2 p {
+    margin-top: 150px;
+    width: 300px;
+}
+
+.certificationContent .li3 p {
+    margin-top: 200px;
+    width: 300px;
+}
+
+.certificationContent .li4 p {
+    margin-top: 150px;
+    width: 300px;
+}
+
+
+
+
+
+/* **************************** Introduction Form ******************************************************************************** */
+
+
+
+.sidebar4{
+    width: 20vw;
+    height: 85vh;
+    background-color: rgb(222, 212, 212);
+    /* margin-left: 10px; */
+    padding: 50px 0px;
+    font-size: 20px;
+}
+
+
+.sidebar4 nav {
+    padding: 20px;
+}
+
+.sidebar4 nav li {
+    cursor: pointer;
+    list-style: none;
+    padding: 25px 0px;
+    margin-left: 20px;
+}
+
+.sidebar4 nav ul a {
+    text-decoration: none;
+    color: black;
+}
+
+.sidebar4 nav ul a:hover {
+    color: white;
+    font-size: 22px;
+}
+
+
+.introContent{
+    background-color: rgba(255, 190, 164, 0.354);
+    width: 80vw;
+}
+
+.introContent div{
+    margin-top: 50px;
+    margin-left: 70px;
+
+}
+
+
+.introContent div img{
+    width: 2.5vw;
+    margin-top: 20px;
+    margin-top: -10px;
+}
+
+.introContent div img:hover{
+    width: 2.7vw;
+    height: 5vh;
+
+}
+
+.introContent div .Hackerrank{
+    margin-left: 150px;
+}
+
+.introContent div .github,.leetcode,.code-forces{
+    margin-left: 50px;
+}
+
+.introContent .about p{
+    margin-top: 10px;
+}
